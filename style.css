@@ -1,0 +1,40 @@
+/* body {
+    background: red;
+} */
+
+.test {
+    border: 10px solid aquamarine
+}
+
+.card-one{
+    /* margin: 50px; */
+    /* margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top:45px;
+    margin-right: 13px; */
+
+/* top, right, bottom, left */
+    margin: 45px 13px 20px 30px;
+}
+
+
+.card-two{
+    /* margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    /* top-bottom, left-right */
+    margin:  40px 20px;
+
+}
+
+@media only screen and (max-width: 280px) {
+body {
+    background: yellow;
+}
+
+.test {
+    border: 10px solid blue;
+}
+}

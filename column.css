@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: pink;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.sedan-box {
+    background:hsl(31, 77%, 52%);
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.suv-box{
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury-box {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.cardBox{
+    padding: 2rem;
+}
+
+.cardBox h1{
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
+
+
+}
+
+.cardBox p {
+    color: white;
+    line-height: 1.7;
+}
+
+.cardBox a {
+    text-decoration: none;
+    background:white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    margin-top: 3.5rem;
+}
+
+@media screen and (max-width:600px) {
+    .preview-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5rem;
+}
+
+.sedan-box {
+border-bottom-left-radius: 0;
+}
+}
